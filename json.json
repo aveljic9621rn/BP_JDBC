@@ -1,0 +1,58 @@
+{
+	"RULES":
+		[
+
+			 {
+				"name": "EXIST" ,
+				"description": "There is no column %s in table %s, or table %s does not exist",
+				"suggestion": "Remove column %s"
+			 },
+			 {
+				"name": "FOREIGN_KEY",
+				"description": "Column %s is not a foreign key",
+				"suggestion": "Please choose one of the following columns: %s"
+			 },
+			 {
+				"name": "MANDATORY",
+				"description": "Query conatins mandatory parts",
+				"suggestion": ""
+			 },
+			 {
+				"name": "ORDER",
+				"description": "After the statement %s, one of the following statements are expected: %s ",
+				"suggestion": "Please insert one of the following statements instead: %s"
+			 },
+			{
+				"name": "ALIAS",
+				"description": "Apostrophes expected around multiple-worded alias %s",
+				"suggestion": "Add ' ' around the alias %s, or reduce its name to one word"
+			},
+			{
+				"name": "GROUP_BY",
+				"description": "Aggregation function %s have to have a 'group by' statement",
+				"suggestion": "Add a group by statement to %s function"
+			},
+			{
+				"name": "WHERE",
+				"description": "Where statement cannot contain aggregation functions (%s)",
+				"suggestion": "Remove %s from where statement"
+			},
+			{
+				"name": "TYPE",
+				"description": "Variable data types and selected data types in making of the procedure/function %s are not matching",
+				"suggestion": ""
+			},
+			{
+				"name": "DEFINED",
+				"description": "%s variables are unused",
+				"suggestion": "Delete %s"
+			},
+			{
+				"name": "BULK_IMPORT",
+				"description": "Imported file %s does not match the structure of the table %s",
+				"suggestion": "Expected selection: %s"
+
+			}
+		]
+
+}
